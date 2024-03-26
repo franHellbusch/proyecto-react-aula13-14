@@ -1,0 +1,9 @@
+.HeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+
+.HeaderTitle > h1 {
+  font-family: "Montserrat", sans-serif;
+}
