@@ -2,8 +2,51 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 70px;
+  align-items: center;
+}
+
+.HeaderTitle {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderTitle > img {
+  margin-right: 5px;
 }
 
 .HeaderTitle > h1 {
   font-family: "Montserrat", sans-serif;
+}
+
+.HeaderNavigation {
+  display: flex;
+  gap: 40px;
+}
+
+.HeaderNavigation > a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000000;
+}
+
+.HeaderNavigation > a:hover {
+  color: #3b3b3b;
+}
+
+.HeaderIconLinks {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.HeaderIconLinks > a {
+  color: #000000;
+}
+
+.HeaderIconLinks > a:hover {
+  color: #3b3b3b;
+}
+
+.HeaderIconLinks > a > svg {
+  width: 35px;
 }
