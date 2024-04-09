@@ -3,6 +3,7 @@ import "./ProductDetailContainer.css";
 import { useEffect, useState } from "react";
 import { useProductsContext } from "../../context/productsContext";
 import ProductDetail from "../ProductDetail/ProductDetail";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 function ProductDetailContainer() {
   const { getProductById } = useProductsContext();
@@ -20,12 +21,19 @@ function ProductDetailContainer() {
 
   return (
     <div className='ProductDetailContainer'>
+      <div className='ProductDetailNavigation'>
+        <p className='ProductDetailNavigationSection'>Home</p>
+        <ArrowForwardIosIcon />
+        <p className='ProductDetailNavigationSection'>Shop</p>
+        <ArrowForwardIosIcon />
+        <p className='ProductDetailNavigationProduct'>{product && product.title}</p>
+      </div>
       {!product ? (
-        <div class='loader'>
-          <div class='circle'></div>
-          <div class='circle'></div>
-          <div class='circle'></div>
-          <div class='circle'></div>
+        <div className='loader'>
+          <div className='circle'></div>
+          <div className='circle'></div>
+          <div className='circle'></div>
+          <div className='circle'></div>
         </div>
       ) : (
         <ProductDetail product={product} />

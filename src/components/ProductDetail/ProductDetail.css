@@ -1,0 +1,79 @@
+.ProductDetail {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  width: calc(100% - 140px);
+  padding: 0 70px;
+}
+
+.ProductDetail > img {
+  width: 35%;
+  border-radius: 10px;
+}
+
+.ProductDetailContent {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ProductDetailInfo > h2 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.ProductDetailInfo > span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+
+.ProductDetailInfo > p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.ProductDetailCounter {
+  display: flex;
+}
+
+.ProductDetailCounterContainer {
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.ProductDetailCounterContainer > button {
+  padding: 15px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.ProductDetailCounterContainer > button:hover {
+  background: #f6f6f6;
+}
+
+.ProductDetailCounterContainer > span {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.ProductDetailCounter > button {
+  background: none;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  flex-grow: 1;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ProductDetailCounter > button:hover {
+  background: #f6f6f6;
+}

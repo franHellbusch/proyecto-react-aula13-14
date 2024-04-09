@@ -1,9 +1,33 @@
 .ProductDetailContainer {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
 }
 
+.ProductDetailNavigation {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 140px);
+  margin-bottom: 30px;
+  background: #f9f1e7;
+  padding: 25px 70px;
+}
+
+.ProductDetailNavigationSection {
+  color: #9f9f9f;
+}
+
+.ProductDetailNavigation > svg {
+  width: 15px;
+  margin: 0 20px;
+}
+
+.ProductDetailNavigationProduct {
+  border-left: 2px solid #9f9f9f;
+  padding-left: 20px;
+}
+
+/* Loader */
 .loader {
   --dim: 3rem;
   width: var(--dim);

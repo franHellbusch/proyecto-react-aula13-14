@@ -5,8 +5,11 @@ import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/cartContext";
 
 function Header() {
+  const { getTotalItems } = useCartContext();
+
   return (
     <header className='HeaderContainer'>
       <div className='HeaderTitle'>
@@ -31,6 +34,7 @@ function Header() {
         </Link>
         <Link to='/cart'>
           <ShoppingCartOutlinedIcon />
+          <span className='CartLinkItemCount'>{getTotalItems()}</span>
         </Link>
       </div>
     </header>

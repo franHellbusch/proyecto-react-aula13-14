@@ -14,7 +14,7 @@ function ProductsListContainer() {
     <div className='ProductsListContainer'>
       <h2>Our Products</h2>
       {products.length == 0 ? (
-        <div class='loadingspinner'>
+        <div className='loadingspinner'>
           <div id='square1'></div>
           <div id='square2'></div>
           <div id='square3'></div>
