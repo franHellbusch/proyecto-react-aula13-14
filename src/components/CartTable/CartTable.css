@@ -1,0 +1,103 @@
+.CartTable {
+  border-spacing: 0;
+  width: 50%;
+}
+
+.CartTable > thead {
+  background: #f9f1e7;
+}
+
+.CartTable > thead > tr {
+  padding: 20px;
+}
+
+.CartTable > thead > tr > td {
+  padding: 15px 50px 15px 0;
+  font-weight: 500;
+}
+
+.CartTableItem > td {
+  padding-top: 40px;
+  padding-right: 50px;
+  color: #9f9f9f;
+}
+
+.CartTableItemSubtotal {
+  color: #000000 !important;
+}
+
+.CartTableItemImage {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.CartTableItemDeleteButton {
+  background: #fe3939;
+  border: 0;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #f9f1e7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.CartTableItemDeleteButton:hover {
+  background: #ff6161;
+  transform: scale(1.05);
+}
+
+.CartTableItemDeleteButton:active {
+  background: #ff6161;
+  transform: scale(1);
+}
+
+.CartTableCounterContainer {
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.CartTableCounterContainer > button {
+  padding: 10px 15px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.CartTableCounterContainer > button:hover {
+  background: #f6f6f6;
+}
+
+.CartTableCounterContainer > span {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.CartTableDeleteAllButton {
+  background: #fe3939;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #f9f1e7;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.CartTableDeleteAllButton:hover {
+  background: #ff6161;
+  transform: scale(1.05);
+}
+
+.CartTableDeleteAllButton:active {
+  background: #ff6161;
+  transform: scale(1);
+}

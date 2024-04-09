@@ -77,3 +77,21 @@
 .ProductDetailCounter > button:hover {
   background: #f6f6f6;
 }
+
+.goCartLink {
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  flex-grow: 1;
+  font-size: 20px;
+  transition: 0.3s;
+  padding: 12px 0;
+  transition: 0.3s;
+}
+
+.goCartLink:hover {
+  background: #f6f6f6;
+}
